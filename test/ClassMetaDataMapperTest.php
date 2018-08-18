@@ -33,5 +33,12 @@ class ClassMetaDataMapperTest extends TestCase
 
         $this->assertEquals(12, $simpleExample->getId());
         $this->assertEquals('good', $simpleExample->getType());
+
+        $mapper = new ClassMetaDataMapper($simpleExample);
+        $mapper->setArray($array);
+        $dataNew = $mapper->getArray();
+
+        $this->assertEquals($dataNew['ID'], $array['ID']);
+        $this->assertEquals($dataNew['TYPE'], $array['TYPE']);
     }
 }
