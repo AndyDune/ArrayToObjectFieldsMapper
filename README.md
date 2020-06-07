@@ -6,9 +6,9 @@
 [![Total Downloads](https://img.shields.io/packagist/dt/andydune/array-to-object-fields-mapper.svg?style=flat-square)](https://packagist.org/packages/andydune/array-to-object-fields-mapper)
 
 
-Map array data to object fields and vise versa.
+It maps array data to object fields and vise versa.
 
-I have an data was retrieved from db. Next I need to work with it, edit and update. 
+Data was retrieved from db. Next I need to work with it, edit and update. 
 It is better to encapsulate data in object witch control data and describe it.
 
 ```php
